@@ -1,0 +1,143 @@
+.portrateBlock {
+	display: flex;
+	position: relative;
+	margin: 0 auto 20px;
+	padding: 10px 10px 40px 40px;
+	width: 300px;
+	/* align-items: center;
+	justify-content: center; */
+	outline: 1px solid green;
+}
+
+.portraitContainer {
+	width: auto;
+	height: 420px;
+	border-radius: 12px;
+	overflow: hidden;
+	object-fit: contain;
+}
+
+.portraitInfo {
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+	background-color: rgb(var(--background-grey));
+	border-radius: var(--border-radius);
+	padding: 12px;
+}
+
+.portraitInfo_title {
+	font-size: 18px;
+}
+
+.portraitInfo_name {
+	font-size: 24px;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profileInfo {
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 1.25;
+	margin-bottom: 12px;
+}
+
+.subTitle {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+@media screen and (min-width: 480px) {
+	.title {
+		font-size: 36px;
+	}
+	.subTitle {
+		font-size: 26px;
+	}
+	.portrateBlock {
+		justify-content: flex-end;
+		width: 450px;
+	}
+	.portraitContainer {
+		width: 332px;
+		height: 500px;
+	}
+
+	.portraitInfo {
+		bottom: 60px;
+		right: 120px;
+	}
+
+	.portraitInfo_title {
+		font-size: 22px;
+	}
+
+	.portraitInfo_name {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.title {
+		margin-bottom: 16px;
+		font-size: 45px;
+	}
+	.subTitle {
+	}
+
+	.portrateBlock {
+		justify-content: flex-end;
+		width: 660px;
+	}
+
+	.portraitContainer {
+		width: 332px;
+		height: 500px;
+	}
+
+	.portraitInfo {
+		bottom: 96px;
+		right: 290px;
+	}
+
+	.portraitInfo_title {
+		font-size: 24px;
+	}
+
+	.portraitInfo_name {
+		font-size: 34px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.wrap {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.title {
+	}
+	.subTitle {
+		font-size: 34px;
+	}
+	.profileInfo {
+		width: 600px;
+		padding: 20px;
+	}
+	.portrateBlock {
+		justify-content: flex-end;
+		width: 540px;
+	}
+
+	.portraitInfo {
+		width: 360px;
+	}
+}
