@@ -92,6 +92,16 @@ body {
 	/* background-color: #f1e4e4; */
 	/* font-family: var(--font-roboto); */
 }
+body {
+	background: rgb(80, 81, 83);
+	background: linear-gradient(
+		11deg,
+		rgba(196, 201, 209, 0.894) 0%,
+		rgba(82, 85, 92, 0.177) 34%,
+		rgba(213, 204, 184, 0.789) 52%,
+		rgba(202, 209, 227, 0.722) 97%
+	);
+}
 
 body.noScroll {
 	overflow-y: hidden;
@@ -132,14 +142,14 @@ select {
 	margin: 0 auto;
 	padding-left: 10px;
 	padding-right: 10px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .section {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	overflow: hidden;
-	outline: 2px solid blue;
+	/* outline: 2px solid blue; */
 }
 
 @media screen and (min-width: 480px) {

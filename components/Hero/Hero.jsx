@@ -19,11 +19,13 @@ function Hero() {
 					</div>
 					<div>
 						<div className={s.profileInfo}>
-							<h1 className={s.title}>Create unique design for busy people</h1>
+							<h1 className={s.title}>
+								Unique designs creation for busy people
+							</h1>
 							<p className={s.subTitle}>
-								Step-by-step plan, from the Idea to Realizaton. Get it on the
-								FREE online meeting
+								Step-by-step plan, from the Idea to Realizaton.
 							</p>
+							<p className={s.subTitle}>Get it on the FREE online meeting</p>
 						</div>
 						<div className={s.buttonNoteWrap}>
 							<Button>Order meeting</Button>

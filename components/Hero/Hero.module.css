@@ -6,7 +6,7 @@
 	width: 300px;
 	/* align-items: center;
 	justify-content: center; */
-	outline: 1px solid green;
+	/* outline: 1px solid green; */
 }
 
 .portraitContainer {
@@ -15,23 +15,30 @@
 	border-radius: 12px;
 	overflow: hidden;
 	object-fit: contain;
+	box-shadow: 10px 10px 12px -3px rgba(78, 76, 76, 0.78);
+	-webkit-box-shadow: 10px 10px 12px -3px rgba(78, 76, 76, 0.78);
+	-moz-box-shadow: 10px 10px 12px -3px rgba(78, 76, 76, 0.78);
 }
 
 .portraitInfo {
 	position: absolute;
 	bottom: 0px;
 	right: 30px;
-	background-color: var(--background-grey);
+	background-color: #bcb4aad8;
 	border-radius: var(--border-radius);
 	padding: 12px;
-}
-
-.portraitInfo_title {
-	font-size: 18px;
+	box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
+	-webkit-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
+	-moz-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
 }
 
 .portraitInfo_name {
 	font-size: 24px;
+	font-weight: 500;
+}
+
+.portraitInfo_title {
+	font-size: 20px;
 }
 
 .image {
@@ -44,8 +51,8 @@
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center;
+	align-items: center; */
 	gap: 20px;
 }
 
