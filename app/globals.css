@@ -3,9 +3,11 @@
 	--border-radius: 12px;
 	--font-roboto: ui-monospace, "Roboto Mono", monospace;
 
-	--text-main-rgb: 29, 29, 29;
-	--background-grey: 216, 216, 216;
-	--background-white: 255, 255, 255;
+	--text-main-rgb: #1d1d1d;
+	--background-grey: #d8d8d8;
+	--dark-grey: #807e7e;
+	--background-white: #fff;
+	--accent: #e87d00;
 
 	/* --primary-glow: conic-gradient(
 		from 180deg at 50% 50%,
@@ -133,12 +135,13 @@ select {
 	outline: 1px solid red;
 }
 
-section {
-	padding-top: 60px;
-	padding-bottom: 60px;
+.section {
+	padding-top: 40px;
+	padding-bottom: 40px;
 	overflow: hidden;
 	outline: 2px solid blue;
 }
+
 @media screen and (min-width: 480px) {
 	.container {
 		width: 480px;
@@ -146,8 +149,8 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-	section {
-		padding-bottom: 90px;
+	.section {
+		padding-bottom: 60px;
 	}
 	.container {
 		width: 768px;

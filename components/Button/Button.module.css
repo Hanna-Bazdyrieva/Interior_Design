@@ -1,0 +1,30 @@
+.buttonWrap {
+	display: inline-block;
+	padding: 12px;
+	flex-basis: 100%;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+	text-align: center;
+	color: var(--background-white);
+	background-color: var(--accent);
+	border-radius: 12px;
+}
+
+@media screen and (min-width: 480px) {
+	.buttonWrap {
+		/* padding: 16px; */
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.buttonWrap {
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 1280x) {
+	.buttonWrap {
+		font-size: 32px;
+	}
+}

@@ -1,14 +1,12 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import Hero from "@/components/Hero/Hero";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Footer, Header, Hero, Portfolio } from "@/components";
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
 			<Header />
 			<Hero />
+			<Portfolio />
 			{/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
