@@ -1,10 +1,12 @@
 import React from "react";
 import s from "./Hero.module.css";
 import { Button } from "..";
+import Image from "next/image";
 
 function Hero() {
 	return (
-		<section className="section">
+		<section className={`section ${s.heroSection}`} id="main">
+			<a href="" id="main" className="anchor"></a>
 			<div className="container">
 				<div className={s.wrap}>
 					<div className={s.portrateBlock}>
@@ -14,7 +16,7 @@ function Hero() {
 						</div>
 
 						<div className={s.portraitContainer}>
-							<img className={s.image} src="images/sasha.jpg" />
+							<img className={s.portrait} src="images/sasha.jpg" />
 						</div>
 					</div>
 					<div>
@@ -43,6 +45,14 @@ function Hero() {
 						</div>
 					</div>
 				</div>
+				<Image
+					className={s.image}
+					src="/images/photo1.jpg"
+					alt="Interior Design"
+					width={1200}
+					height={200}
+					priority
+				/>
 			</div>
 		</section>
 	);

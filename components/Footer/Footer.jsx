@@ -3,7 +3,7 @@ import s from "./Footer.module.css";
 
 function Footer() {
 	return (
-		<footer className={`${s.section} section`}>
+		<footer className={`${s.section} section`} id="contacts">
 			<div className="container">
 				<div className={s.headerContainer}>
 					<h3 className={s.header}>Get all the information&nbsp;</h3>

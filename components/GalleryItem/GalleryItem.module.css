@@ -1,0 +1,40 @@
+.block {
+	display: flex;
+	gap: 20px;
+	padding: 10px;
+
+	background-color: #fff;
+}
+.rev {
+	flex-direction: row-reverse;
+}
+
+.biggerChild {
+	flex-basis: 66%;
+}
+
+.biggerImg,
+.smallerImg {
+	object-fit: cover;
+	height: 20vh;
+}
+
+.smallerChild {
+	flex-basis: 33%;
+	object-fit: cover;
+}
+@media screen and (min-width: 767px) {
+	.biggerImg,
+	.smallerImg {
+		object-fit: cover;
+		height: 30vh;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.biggerImg,
+	.smallerImg {
+		object-fit: cover;
+		height: 45vh;
+	}
+}

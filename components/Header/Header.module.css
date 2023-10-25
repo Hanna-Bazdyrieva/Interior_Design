@@ -1,0 +1,115 @@
+.headerSection {
+	z-index: 2000;
+	position: fixed;
+	top: 0;
+	padding: 6px 0;
+	width: 100%;
+
+	background-color: #e4e3e1;
+	box-shadow: 0 3px 0 rgba(66, 61, 61, 0.449);
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 0 16px;
+
+	/* box-shadow: 0 3px 0 rgba(66, 61, 61, 0.449); */
+	/* outline: 1px solid rgb(6, 247, 30); */
+}
+
+.logo {
+	padding: 8px;
+	/* text-align: center; */
+}
+
+.logoName {
+	font-size: 24px;
+	font-weight: 600;
+}
+.phone {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.logoTitle {
+	font-size: 18px;
+}
+
+.navList {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+
+	font-size: 20px;
+}
+
+.navLink {
+	position: relative;
+	font-weight: 500;
+}
+
+.navLink:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	bottom: -2px;
+	width: 0px;
+	height: 2px;
+	background: var(--accent);
+	transition: all 0.45s;
+}
+
+.logo .navLink:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	bottom: 22px;
+	width: 0px;
+	height: 2px;
+	background: var(--accent);
+	transition: all 0.45s;
+}
+
+.navLink:hover:after,
+.logo .navLink:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		font-size: 38px;
+	}
+
+	.contact {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.header {
+		padding: 0 32px;
+		font-size: 42px;
+	}
+
+	.contact {
+		font-size: 20px;
+	}
+	.logoName,
+	.phone {
+		font-size: 26px;
+		font-weight: 600;
+	}
+	.logoTitle {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.navList {
+		gap: 44px;
+		font-size: 28px;
+	}
+}

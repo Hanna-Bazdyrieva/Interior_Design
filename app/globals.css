@@ -8,6 +8,7 @@
 	--dark-grey: #807e7e;
 	--background-white: #fff;
 	--accent: #e87d00;
+	--accent-bright: #fc8a04;
 
 	/* --primary-glow: conic-gradient(
 		from 180deg at 50% 50%,
@@ -79,7 +80,9 @@
 	margin: 0;
 	font-weight: 400;
 }
-
+html {
+	scroll-padding-top: 70px; /* height of sticky header */
+}
 html,
 body {
 	margin: 0;
@@ -150,6 +153,12 @@ select {
 	padding-bottom: 40px;
 	overflow: hidden;
 	/* outline: 2px solid blue; */
+}
+.anchor {
+	display: block;
+	position: relative;
+	top: -120px;
+	visibility: hidden;
 }
 
 @media screen and (min-width: 480px) {

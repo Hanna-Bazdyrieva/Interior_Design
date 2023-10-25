@@ -1,21 +1,38 @@
 .buttonWrap {
-	display: inline-block;
 	padding: 12px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-basis: 100%;
+
 	font-size: 24px;
 	font-weight: 600;
-	line-height: 1.5;
-	text-align: center;
+
 	color: var(--background-white);
 	background-color: var(--accent);
 	border-radius: 12px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transform: scale(1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-	.buttonWrap {
-		/* padding: 16px; */
-	}
+.buttonWrap:hover,
+.buttonWrap:focus {
+	background-color: var(--accent-bright);
+	transform: scale(1.05);
 }
+
+.buttonWrap:active {
+	background-color: var(--dark-grey);
+	transform: scale(0.95);
+}
+
+/* @media screen and (min-width: 480px) {
+	.buttonWrap {
+	}
+} */
 
 @media screen and (min-width: 768px) {
 	.buttonWrap {
@@ -23,8 +40,9 @@
 	}
 }
 
-@media screen and (min-width: 1280x) {
+@media screen and (min-width: 1280px) {
 	.buttonWrap {
-		font-size: 32px;
+		padding: 20px;
+		font-size: 36px;
 	}
 }
