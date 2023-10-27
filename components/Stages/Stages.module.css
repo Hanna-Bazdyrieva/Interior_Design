@@ -1,0 +1,94 @@
+.stagesContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 30px;
+}
+
+.generalInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+}
+
+.infoWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+}
+
+.infoTitle {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.infoSubtitle {
+	font-size: 20px;
+}
+
+.imgWrap {
+	min-width: 360px;
+	width: 100%;
+	/* height: 280px; */
+}
+
+.benefits {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+}
+
+@media screen and (min-width: 480px) {
+	.infoTitle {
+		font-size: 32px;
+	}
+
+	.infoSubtitle {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.infoTitle {
+		font-size: 36px;
+	}
+
+	.infoSubtitle {
+		font-size: 26px;
+	}
+
+	.benefits {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.generalInfo {
+		flex-direction: row;
+		gap: 30px;
+	}
+	.infoTitle {
+		font-size: 42px;
+		font-weight: 600;
+	}
+
+	.infoSubtitle {
+		font-size: 34px;
+	}
+
+	.imgWrap {
+		/* flex-basis: 440px; */
+	}
+}

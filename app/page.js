@@ -7,8 +7,8 @@ export default function Home() {
 			<Header />
 			<Hero />
 			<Portfolio />
-			<Prices />
 			<Stages />
+			<Prices />
 			{/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;

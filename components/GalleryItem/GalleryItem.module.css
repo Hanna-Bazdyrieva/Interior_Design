@@ -1,16 +1,18 @@
 .block {
 	display: flex;
-	gap: 20px;
-	padding: 10px;
+	gap: 4px;
 
-	background-color: #fff;
+	background-color: transparent;
 }
+
 .rev {
 	flex-direction: row-reverse;
 }
 
 .biggerChild {
 	flex-basis: 66%;
+	padding: 4px;
+	background-color: var(--background-white);
 }
 
 .biggerImg,
@@ -21,9 +23,22 @@
 
 .smallerChild {
 	flex-basis: 33%;
+	padding: 4px;
+	background-color: var(--background-white);
+
 	object-fit: cover;
 }
+
 @media screen and (min-width: 767px) {
+	.block {
+		gap: 6px;
+	}
+
+	.biggerChild,
+	.smallerChild {
+		padding: 6px;
+	}
+
 	.biggerImg,
 	.smallerImg {
 		object-fit: cover;
@@ -32,9 +47,18 @@
 }
 
 @media screen and (min-width: 1280px) {
+	.block {
+		gap: 10px;
+	}
+
 	.biggerImg,
 	.smallerImg {
 		object-fit: cover;
 		height: 45vh;
+	}
+
+	.biggerChild,
+	.smallerChild {
+		padding: 10px;
 	}
 }

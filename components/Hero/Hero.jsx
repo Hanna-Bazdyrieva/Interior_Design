@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Hero.module.css";
-import { Button } from "..";
+import { Button, ImgBorder } from "..";
 import Image from "next/image";
 
 function Hero() {
@@ -19,7 +19,7 @@ function Hero() {
 							<img className={s.portrait} src="images/sasha.jpg" />
 						</div>
 					</div>
-					<div>
+					<div className={s.infoWrap}>
 						<div className={s.profileInfo}>
 							<h1 className={s.title}>
 								Unique designs creation for busy people
@@ -45,14 +45,16 @@ function Hero() {
 						</div>
 					</div>
 				</div>
-				<Image
-					className={s.image}
-					src="/images/photo1.jpg"
-					alt="Interior Design"
-					width={1200}
-					height={200}
-					priority
-				/>
+				<ImgBorder>
+					<Image
+						className={s.image}
+						src="/images/photo1.jpg"
+						alt="Interior Design"
+						width={1200}
+						height={200}
+						priority
+					/>
+				</ImgBorder>
 			</div>
 		</section>
 	);

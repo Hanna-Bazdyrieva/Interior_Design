@@ -1,9 +1,12 @@
 .section {
+	padding-bottom: 900px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
 .headerContainer {
 	text-align: center;
 }

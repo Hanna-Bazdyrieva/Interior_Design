@@ -1,0 +1,55 @@
+.pricesContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 12px;
+}
+
+.pricesSubtitle {
+	margin-bottom: 20px;
+	text-align: center;
+
+	font-size: 20px;
+}
+
+.optionList {
+	display: flex;
+	flex-direction: column;
+
+	gap: 24px;
+
+	width: 100%;
+}
+
+.optionDetail {
+	border-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 768px) {
+	.pricesSubtitle {
+		margin-bottom: 24px;
+
+		font-size: 28px;
+	}
+	.optionList {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		gap: 24px;
+
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.pricesSubtitle {
+		margin-bottom: 32px;
+		font-size: 32px;
+	}
+
+	.optionList {
+		flex-direction: row;
+	}
+}

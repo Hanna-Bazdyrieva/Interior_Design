@@ -1,0 +1,58 @@
+.option {
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+
+	width: 100%;
+
+	background-color: var(--background-sand);
+	border-radius: var(--border-radius);
+}
+
+.optionTitle,
+.optionPrice {
+	text-align: center;
+
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.optionDetailsList {
+	padding-left: 30px;
+	align-self: flex-start;
+	list-style: square;
+
+	font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+	.option {
+		padding: 24px;
+		flex-basis: 48%;
+		gap: 24px;
+	}
+
+	.optionTitle,
+	.optionPrice {
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.option {
+		padding: 32px;
+		flex-basis: 23%;
+
+		gap: 32px;
+	}
+
+	.optionTitle,
+	.optionPrice {
+		font-size: 28px;
+	}
+}

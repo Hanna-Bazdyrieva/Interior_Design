@@ -1,0 +1,41 @@
+.benefit {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: var(--background-sand);
+	border-radius: var(--border-radius);
+}
+
+.title {
+	position: relative;
+	font-size: 24px;
+	font-weight: 500px;
+}
+
+.title:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	width: 100%;
+	height: 3px;
+	background: var(--accent);
+	transition: all 0.45s;
+}
+
+.text {
+	font-style: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.benefit {
+		flex-basis: 48%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.benefit {
+		flex-basis: 23%;
+	}
+}

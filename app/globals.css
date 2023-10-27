@@ -7,6 +7,7 @@
 	--background-grey: #d8d8d8;
 	--dark-grey: #807e7e;
 	--background-white: #fff;
+	--background-sand: #bcb4aad8;
 	--accent: #e87d00;
 	--accent-bright: #fc8a04;
 
@@ -154,8 +155,8 @@ svg {
 }
 
 .section {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	overflow: hidden;
 	/* outline: 2px solid blue; */
 }
@@ -173,9 +174,9 @@ svg {
 }
 
 @media screen and (min-width: 768px) {
-	.section {
+	/* .section {
 		padding-bottom: 60px;
-	}
+	} */
 	.container {
 		width: 768px;
 		padding-left: 32px;
