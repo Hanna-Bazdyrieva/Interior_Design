@@ -6,6 +6,7 @@ import Footer from "./Footer/Footer.jsx";
 import MobileMenu from "./MobileMenu/MobileMenu.jsx";
 import Portfolio from "./Portfolio/Portfolio.jsx";
 import Prices from "./Prices/Prices.jsx";
+import Socials from "./Socials/Socials.jsx";
 import Stages from "./Stages/Stages.jsx";
 
 export {
@@ -17,5 +18,6 @@ export {
 	MobileMenu,
 	Portfolio,
 	Prices,
+	Socials,
 	Stages,
 };

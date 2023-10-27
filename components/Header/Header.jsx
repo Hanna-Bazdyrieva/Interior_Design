@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
-// import Image from "next/image";
 import { useEffect, useState } from "react";
-// import Nav from "./Nav";
-// import MobileMenu from "./MobileMenu";
 import s from "./Header.module.css";
+import { MobileMenu } from "..";
 
 function Header() {
-	// const [menuOpen, setMenuOpen] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 	const useMediaQuery = (m, screen) => {
 		const [matches, setMatches] = useState(false);
 
@@ -106,21 +104,22 @@ function Header() {
 				)}
 
 				{isSmallScreen && (
-					<button
-						type="button"
-						className="menu__btn-open"
-						onClick={() => setMenuOpen(true)}
-					>
-						<svg width="40" height="40">
-							<use
-								className="menu__icon--menu"
-								href="/icons/icons.svg#icon-menu"
-							></use>
-						</svg>
-					</button>
-				)}
+					<>
+						{!menuOpen && (
+							<button
+								type="button"
+								className={s.menuBtnOpen}
+								onClick={() => setMenuOpen(true)}
+							>
+								<svg className={s.menuBtnOpenIcon} width="40" height="40">
+									<use href="/icons/icons.svg#icon-menu"></use>
+								</svg>
+							</button>
+						)}
 
-				{/* {menuOpen && <MobileMenu setMenu={setMenuOpen} />} */}
+						{menuOpen && <MobileMenu setMenu={setMenuOpen} />}
+					</>
+				)}
 			</div>
 		</header>
 	);

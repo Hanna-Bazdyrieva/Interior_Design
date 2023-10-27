@@ -4,6 +4,7 @@
 	top: 0;
 	padding: 6px 0;
 	width: 100%;
+	min-height: 70px;
 
 	background-color: #e4e3e1;
 	box-shadow: 0 3px 0 rgba(66, 61, 61, 0.449);
@@ -112,4 +113,25 @@
 		gap: 44px;
 		font-size: 28px;
 	}
+}
+
+.menuBtnOpen {
+	position: absolute;
+	right: 50px;
+	top: 14px;
+
+	width: 48px;
+	height: 48px;
+
+	background-color: transparent;
+	border: none;
+	transform: scale(1);
+	transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+	cursor: pointer;
+}
+
+.menuBtnOpen:hover {
+	transform: scale(1.05);
+	color: var(--accent);
 }

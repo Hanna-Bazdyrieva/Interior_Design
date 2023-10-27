@@ -124,6 +124,7 @@ a {
 }
 
 button {
+	border: none;
 	cursor: pointer;
 }
 
@@ -138,6 +139,10 @@ button,
 textarea,
 select {
 	font: inherit;
+}
+
+svg {
+	fill: currentColor;
 }
 
 .container {
