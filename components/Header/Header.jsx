@@ -97,8 +97,8 @@ function Header() {
 								</a>
 							</li>
 						</ul>
-						<a className={`${s.phone} ${s.navLink}`} href="tel:+380675555555">
-							38-067-555-5555
+						<a className={`${s.phone} ${s.navLink}`} href="tel:+380677870178">
+							38-067-7870178
 						</a>
 					</>
 				)}

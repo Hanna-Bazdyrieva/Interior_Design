@@ -5,6 +5,7 @@ import Header from "./Header/Header.jsx";
 import Hero from "./Hero/Hero.jsx";
 import ImgBorder from "./ImgBorder/ImgBorder.jsx";
 import MobileMenu from "./MobileMenu/MobileMenu.jsx";
+import Modal from "./Modal/Modal.jsx";
 import Portfolio from "./Portfolio/Portfolio.jsx";
 import Prices from "./Prices/Prices.jsx";
 import PricesOption from "./PricesOption/PricesOption.jsx";
@@ -20,6 +21,7 @@ export {
 	Header,
 	ImgBorder,
 	MobileMenu,
+	Modal,
 	Portfolio,
 	Prices,
 	PricesOption,

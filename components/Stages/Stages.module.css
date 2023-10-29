@@ -7,6 +7,23 @@
 	gap: 30px;
 }
 
+.stepsInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.stepsList {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+}
+
 .generalInfo {
 	display: flex;
 	flex-direction: column;
@@ -44,12 +61,30 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
 
 	gap: 20px;
 }
 
+.benefitPhoto {
+	display: none;
+	background-color: var(--background-sand);
+	border-radius: var(--border-radius);
+}
+
+.image {
+	height: 100%;
+}
+
 @media screen and (min-width: 480px) {
+	.stepsList {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+
+		gap: 20px;
+	}
+
 	.infoTitle {
 		font-size: 32px;
 	}
@@ -79,16 +114,20 @@
 		flex-direction: row;
 		gap: 30px;
 	}
+
 	.infoTitle {
 		font-size: 42px;
-		font-weight: 600;
 	}
 
 	.infoSubtitle {
 		font-size: 34px;
 	}
 
-	.imgWrap {
-		/* flex-basis: 440px; */
+	.benefitPhoto {
+		display: block;
+		overflow: hidden;
+
+		flex-basis: 32%;
+		max-width: 32%;
 	}
 }

@@ -11,8 +11,8 @@ function Footer() {
 					<h3 className={s.header}>and order your design project</h3>
 				</div>
 				<div className={s.contact}>
-					<a className={s.contactLink} href="tel:+380675555555">
-						38-067--555-5555
+					<a className={s.contactLink} href="tel:+380677870178">
+						38-067-7870178
 					</a>
 					<a className={s.contactLink} href="mailto: abc@example.com">
 						abc@example.com

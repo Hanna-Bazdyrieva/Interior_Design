@@ -10,11 +10,11 @@ function Portfolio() {
 			<div className={`container ${s.portfolioContainer}`}>
 				<Title>Portfolio</Title>
 				<div className={s.gallery}>
-					<GalleryItem items={[2, 3]} />
-					<GalleryItem items={[5, 4]} reverse />
-					<GalleryItem items={[6, 7]} />
-					<GalleryItem items={[9, 8]} reverse />
-				</div>{" "}
+					<GalleryItem images={[1, 2]} />
+					<GalleryItem images={[4, 3]} reverse />
+					<GalleryItem images={[5, 6]} />
+					<GalleryItem images={[8, 7]} reverse />
+				</div>
 			</div>
 		</section>
 	);

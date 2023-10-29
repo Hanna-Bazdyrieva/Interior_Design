@@ -1,4 +1,5 @@
 .option {
+	position: relative;
 	padding: 20px;
 
 	display: flex;
@@ -21,6 +22,19 @@
 	font-size: 24px;
 	font-weight: 600;
 }
+.optionTitle {
+}
+
+.optionTitle:after {
+	content: " ";
+	position: absolute;
+	left: 20px;
+	top: 60px;
+	width: 87%;
+	height: 1px;
+	background: var(--accent);
+	transition: all 0.45s;
+}
 
 .optionDetailsList {
 	padding-left: 30px;
@@ -41,6 +55,10 @@
 	.optionPrice {
 		font-size: 26px;
 	}
+
+	.optionTitle:after {
+		top: 67px;
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -48,11 +66,15 @@
 		padding: 32px;
 		flex-basis: 23%;
 
-		gap: 32px;
+		gap: 28px;
 	}
 
 	.optionTitle,
 	.optionPrice {
 		font-size: 28px;
+	}
+
+	.optionTitle:after {
+		top: 75px;
 	}
 }

@@ -1,5 +1,13 @@
 import styles from "./page.module.css";
-import { Footer, Header, Hero, Portfolio, Prices, Stages } from "@/components";
+import {
+	Footer,
+	Header,
+	Hero,
+	Modal,
+	Portfolio,
+	Prices,
+	Stages,
+} from "@/components";
 
 export default function Home() {
 	return (
@@ -9,6 +17,7 @@ export default function Home() {
 			<Portfolio />
 			<Stages />
 			<Prices />
+			{/* <Modal /> */}
 			{/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
