@@ -4,18 +4,13 @@ import React, { useState } from "react";
 import s from "./GalleryItem.module.css";
 import Image from "next/image";
 import Link from "next/link";
-// import { Modal } from "..";
 
 function GalleryItem({ images, reverse }) {
-	// const [isModalOpen, setIsModalOpen] = useState(false);
 	return (
 		<>
 			<div className={reverse ? `${s.block}  ${s.rev}` : `${s.block}`}>
-				<div
-					className={s.biggerChild}
-					// onClick={() => setIsModalOpen(true)}
-				>
-					<Link href={`/${images[0]}`}>
+				<div className={s.biggerChild}>
+					<Link href={`/?image=${images[0]}`}>
 						<Image
 							className={s.biggerImg}
 							src={`/images/portfolio/${images[0]}.jpg`}
@@ -27,7 +22,7 @@ function GalleryItem({ images, reverse }) {
 					</Link>
 				</div>
 				<div className={s.smallerChild}>
-					<Link href={`/${images[1]}`}>
+					<Link href={`/?image=${images[1]}`}>
 						<Image
 							className={s.biggerImg}
 							src={`/images/portfolio/${images[1]}.jpg`}

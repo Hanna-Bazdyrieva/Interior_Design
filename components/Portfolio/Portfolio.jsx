@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import s from "./Portfolio.module.css";
 import { GalleryItem, Title } from "..";
+
+import s from "./Portfolio.module.css";
 
 function Portfolio() {
 	return (

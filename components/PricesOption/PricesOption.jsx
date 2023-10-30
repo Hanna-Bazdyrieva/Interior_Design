@@ -3,6 +3,7 @@ import s from "./PricesOption.module.css";
 import { Button } from "..";
 
 function PricesOption({ title, keyProp, price }) {
+	console.log("keyProp", keyProp);
 	const details = ["first detail", "second detail", "3 detail", "4 detail"];
 	return (
 		<li key={keyProp} className={s.option}>

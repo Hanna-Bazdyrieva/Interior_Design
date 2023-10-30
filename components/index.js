@@ -3,6 +3,7 @@ import Footer from "./Footer/Footer.jsx";
 import GalleryItem from "./GalleryItem/GalleryItem.jsx";
 import Header from "./Header/Header.jsx";
 import Hero from "./Hero/Hero.jsx";
+import ImageDetail from "./ImageDetail/ImageDetail.jsx";
 import ImgBorder from "./ImgBorder/ImgBorder.jsx";
 import MobileMenu from "./MobileMenu/MobileMenu.jsx";
 import Modal from "./Modal/Modal.jsx";
@@ -19,6 +20,7 @@ export {
 	GalleryItem,
 	Hero,
 	Header,
+	ImageDetail,
 	ImgBorder,
 	MobileMenu,
 	Modal,

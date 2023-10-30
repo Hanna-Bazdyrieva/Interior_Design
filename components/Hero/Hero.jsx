@@ -1,12 +1,13 @@
 import React from "react";
 import s from "./Hero.module.css";
-import { Button, ImgBorder } from "..";
+import { Button, ImageDetail, ImgBorder, Modal } from "..";
 import Image from "next/image";
 
 function Hero() {
 	return (
 		<section className={`section ${s.heroSection}`} id="main">
 			<a href="" id="main" className="anchor"></a>
+
 			<div className="container">
 				<div className={s.wrap}>
 					<div className={s.portrateBlock}>
