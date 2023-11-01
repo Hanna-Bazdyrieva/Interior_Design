@@ -17,9 +17,9 @@ function StagesItem({ link, number, title }) {
 					priority
 				/>
 			</div>
-			<a className={s.buttonLink} href={link}>
+			{/* <a className={s.buttonLink} href={link}>
 				<div className={s.button}>See example </div>
-			</a>
+			</a> */}
 		</li>
 	);
 }

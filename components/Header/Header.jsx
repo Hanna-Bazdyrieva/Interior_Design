@@ -26,80 +26,56 @@ function Header() {
 	const isSmallScreen = useMediaQuery("max", 768);
 
 	return (
-		// <header className={`${s.section} section`}>
-		// 	<div className="container">
-		// 		<div className={s.headerContainer}>
-		// 			<h3 className={s.header}>Get all the information&nbsp;</h3>
-		// 			<h3 className={s.header}>and order your design project</h3>
-		// 		</div>
-		// 		<div className={s.contact}>
-		// 			<a className={s.contactLink} href="tel:+380675555555">
-		// 				38-067--555-5555
-		// 			</a>
-		// 			<a className={s.contactLink} href="mailto: abc@example.com">
-		// 				abc@example.com
-		// 			</a>
-		// 		</div>
-		// 		<ul className={s.socials}>
-		// 			<li className={s.socialsItem}>
-		// 				<a href="" className={s.socialsLink}>
-		// 					<svg className={s.socialsIcon} width="20" height="20">
-		// 						<use href="/icons/icons.svg#instagram"></use>
-		// 					</svg>
-		// 				</a>
-		// 			</li>
-		// 			<li className={s.socialsItem}>
-		// 				<a href="" className={s.socialsLink}>
-		// 					<svg className={s.socialsIcon} width="20" height="20">
-		// 						<use href="/icons/icons.svg#facebook"></use>
-		// 					</svg>
-		// 				</a>
-		// 			</li>
-		// 			<li className={s.socialsItem}>
-		// 				<a href="" className={s.socialsLink}>
-		// 					<svg className={s.socialsIcon} width="20" height="20">
-		// 						<use href="/icons/icons.svg#twitter"></use>
-		// 					</svg>
-		// 				</a>
-		// 			</li>
-		// 		</ul>
-		// 	</div>
-		// </header>
 		<header className={`section ${s.headerSection}`}>
 			<div className={`container ${s.header}`}>
 				{!isSmallScreen && (
 					<>
 						<div className={s.logo}>
 							<a href="#main" className={s.navLink}>
-								<h3 className={s.logoName}>Alexandra Vasylevska</h3>
+								<h3 className={s.logoName}>Aleksandra Vasylevska</h3>
 								<p className={s.logoTitle}>Interior Designer</p>
 							</a>
 						</div>
-						<ul className={s.navList}>
+						<nav className={s.navigation}>
+							<ul className={s.navList}>
+								<li>
+									<a href="#portfolio" className={s.navLink}>
+										Portfolio
+									</a>
+								</li>
+								<li>
+									<a href="#stages" className={s.navLink}>
+										Stages
+									</a>
+								</li>
+								<li>
+									<a href="#prices" className={s.navLink}>
+										Prices
+									</a>
+								</li>
+								<li>
+									<a href="#contacts" className={s.navLink}>
+										Contacts
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<ul className={s.telephoneWrap}>
 							<li>
-								<a href="#portfolio" className={s.navLink}>
-									Portfolio
+								<a
+									className={`${s.phone} ${s.navLink}`}
+									href="tel:+380677870178"
+								>
+									38-067-7870178
 								</a>
 							</li>
-							<li>
-								<a href="#stages" className={s.navLink}>
-									Stages
-								</a>
-							</li>
-							<li>
-								<a href="#prices" className={s.navLink}>
-									Prices
-								</a>
-							</li>
-							<li>
-								<a href="#contacts" className={s.navLink}>
-									Contacts
-								</a>
+							<li className={s.telephoneUnderHours}>
+								<div className={s.greenCircle}></div>
+								<p className={s.telephoneText}>
+									<span>Mon-Fri</span> <span>9:00am - 4:00pm</span>
+								</p>
 							</li>
 						</ul>
-						<a className={`${s.phone} ${s.navLink}`} href="tel:+380677870178">
-							38-067-7870178
-						</a>
 					</>
 				)}
 

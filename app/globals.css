@@ -92,20 +92,20 @@ body {
 	max-width: 100vw;
 	overflow-x: hidden;
 	color: rgb(var(--text-main-rgb));
-	background-color: rgb(var(--background-white));
+	background-color: var(--background-white);
 
 	/* background-color: #f1e4e4; */
 	/* font-family: var(--font-roboto); */
 }
 body {
-	background: rgb(80, 81, 83);
-	background: linear-gradient(
+	/* background: rgb(80, 81, 83); */
+	/* background: linear-gradient(
 		11deg,
 		rgba(196, 201, 209, 0.894) 0%,
 		rgba(82, 85, 92, 0.177) 34%,
 		rgba(213, 204, 184, 0.789) 52%,
 		rgba(202, 209, 227, 0.722) 97%
-	);
+	); */
 }
 
 body.noScroll {

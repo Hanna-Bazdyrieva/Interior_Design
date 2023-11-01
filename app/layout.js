@@ -1,7 +1,10 @@
 import { Roboto } from "next/font/google";
+// import { Onest } from "next/font/google";
+
 import "./globals.css";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500"] });
+// const onest = Onest({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export const metadata = {
 	title: "Interior Designer Alexandra Vasylevska",

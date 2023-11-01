@@ -1,5 +1,6 @@
 .heroSection {
 	margin-top: 80px;
+	overflow: visible;
 }
 
 .portrateBlock {
@@ -14,13 +15,13 @@
 }
 
 .portraitContainer {
-	padding: 6px;
+	/* padding: 6px; */
 	width: auto;
 	height: 420px;
-	border-radius: 12px;
+	border-radius: 6px;
 	overflow: hidden;
 	object-fit: contain;
-	background-color: var(--background-white);
+	background-color: transparent;
 	box-shadow: 10px 10px 12px -3px rgba(78, 76, 76, 0.78);
 	-webkit-box-shadow: 10px 10px 12px -3px rgba(78, 76, 76, 0.78);
 	-moz-box-shadow: 10px 10px 12px -3px rgba(78, 76, 76, 0.78);
@@ -40,7 +41,7 @@
 
 .portraitInfo_name {
 	font-size: 24px;
-	font-weight: 500;
+	/* font-weight: 500; */
 }
 
 .portraitInfo_title {
@@ -51,13 +52,14 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: var(--border-radius);
 }
+
 .infoWrap {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
+
 .profileInfo {
 	display: flex;
 	flex-direction: column;
@@ -140,8 +142,6 @@
 		margin-bottom: 16px;
 		font-size: 45px;
 	}
-	.subTitle {
-	}
 
 	.portrateBlock {
 		justify-content: flex-end;
@@ -163,7 +163,7 @@
 	}
 
 	.portraitInfo_name {
-		font-size: 34px;
+		font-size: 32px;
 	}
 	.consultNote {
 		font-size: 16px;
@@ -171,39 +171,80 @@
 }
 
 @media screen and (min-width: 1280px) {
+	.heroImgSection {
+		width: 100vw;
+		height: 700px;
+		background-color: rgb(150, 152, 151);
+
+		background-image: url(../../public/images/photo1.jpg);
+		background-position-y: bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	.wrap {
 		display: flex;
 		flex-direction: row-reverse;
+		margin-bottom: 40px;
 	}
+	.infoWrap {
+		width: 800px;
+	}
+
 	.title {
+		font-size: 46px;
 	}
+
 	.subTitle {
-		font-size: 34px;
+		font-size: 26px;
 	}
+
 	.profileInfo {
 		width: 600px;
 		padding: 20px;
 	}
+
 	.portrateBlock {
 		justify-content: flex-end;
 		width: 540px;
 	}
-	.portraitInfo {
-		bottom: 54px;
-		right: 250px;
-		width: 360px;
+
+	.portraitContainer {
+		position: absolute;
 	}
+
+	.portraitInfo {
+		bottom: -124px;
+		z-index: 10;
+		right: 238px;
+		width: 380px;
+	}
+
 	.buttonNoteWrap {
-		flex-direction: column;
-		width: 75%;
+		/* flex-direction: column; */
+		/* width: 75%; */
 	}
 	.consultIcon {
-		width: 44px;
-		height: 44px;
+		width: 32px;
+		height: 32px;
 	}
 	.consultNote {
 		padding-top: 20px;
-		font-size: 24px;
+		font-size: 18px;
 		gap: 20px;
 	}
+
+	/* .imageBigWrap {
+		position: absolute;
+		left: 0;
+		top: 500px;
+		margin-left: -50px;
+		width: 100vw;
+		height: 700px;
+		background-color: rgb(150, 152, 151);
+
+		background-image: url(../../public/images/photo1.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	} */
 }

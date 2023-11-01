@@ -6,7 +6,7 @@
 	width: 100%;
 	min-height: 70px;
 
-	background-color: #e4e3e1;
+	background-color: var(--background-white);
 	box-shadow: 0 3px 0 rgba(66, 61, 61, 0.449);
 }
 
@@ -17,27 +17,34 @@
 	justify-content: space-between;
 
 	padding: 0 16px;
+	height: 80px;
 
 	/* box-shadow: 0 3px 0 rgba(66, 61, 61, 0.449); */
 	/* outline: 1px solid rgb(6, 247, 30); */
 }
 
+.navigation {
+	/* display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between; */
+}
+
 .logo {
 	padding: 8px;
+	width: 170px;
 	/* text-align: center; */
 }
 
 .logoName {
 	font-size: 24px;
-	font-weight: 600;
-}
-.phone {
-	font-size: 18px;
-	font-weight: 400;
+	text-transform: uppercase;
 }
 
-.logoTitle {
+.logoTitle,
+.telephoneText {
 	font-size: 18px;
+	font-weight: 300;
 }
 
 .navList {
@@ -50,7 +57,7 @@
 
 .navLink {
 	position: relative;
-	font-weight: 500;
+	/* font-weight: 500; */
 }
 
 .navLink:after {
@@ -81,37 +88,70 @@
 	left: 0;
 }
 
-@media screen and (min-width: 768px) {
-	.header {
-		font-size: 38px;
-	}
+.telephoneWrap {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 6px;
 
-	.contact {
-		font-size: 18px;
-	}
+	width: 180px;
+}
+
+.phone {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.telephoneUnderHours {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	gap: 6px;
+}
+
+.greenCircle {
+	padding: 2px;
+	width: 14px;
+	height: 12px;
+
+	border-radius: 50%;
+	background-color: rgb(101, 197, 28);
+}
+
+.telephoneText {
+	display: inline-block;
+}
+
+.telephoneText span {
+	display: inline-block;
 }
 
 @media screen and (min-width: 1280px) {
-	.header {
-		padding: 0 32px;
-		font-size: 42px;
+	.logo {
+		width: 300px;
 	}
 
-	.contact {
-		font-size: 20px;
-	}
 	.logoName,
 	.phone {
-		font-size: 26px;
-		font-weight: 600;
+		font-size: 22px;
 	}
-	.logoTitle {
-		font-size: 20px;
+
+	.phone {
 		font-weight: 500;
 	}
+
+	.logoTitle {
+		font-size: 20px;
+	}
+
 	.navList {
 		gap: 44px;
-		font-size: 28px;
+		font-size: 24px;
+	}
+
+	.telephoneWrap {
+		width: 250px;
 	}
 }
 
