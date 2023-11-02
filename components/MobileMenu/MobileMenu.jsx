@@ -16,8 +16,8 @@ function MobileMenu({ setMenu }) {
 			</button>
 			<div className={s.logo}>
 				<a href="#main" className={s.navLink}>
-					<h3 className={s.logoName}>Aleksandra Vasylevska</h3>
-					<p className={s.logoTitle}>Interior Designer</p>
+					<h3 className={s.logoName}>Oleksandra Vasylevska</h3>
+					<p className={s.logoTitle}>interior design</p>
 				</a>
 			</div>
 			<nav className={s.nav}>
@@ -32,19 +32,19 @@ function MobileMenu({ setMenu }) {
 							Stages
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a href="#prices" className={s.navLink}>
 							Prices
 						</a>
-					</li>
+					</li> */}
 					<li>
 						<a href="#contacts" className={s.navLink}>
 							Contacts
 						</a>
 					</li>
 				</ul>
-				<a className={`${s.phone} ${s.navLink}`} href="tel:+380677870178">
-					38-067-7870178
+				<a className={`${s.phone} ${s.navLink}`} href="tel:+000000000000">
+					+000000000000
 				</a>
 			</nav>
 

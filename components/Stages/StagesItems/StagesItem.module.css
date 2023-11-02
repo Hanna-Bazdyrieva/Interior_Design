@@ -1,12 +1,16 @@
 .item {
-	padding: 20px;
+	padding: 30px;
+	width: 90%;
 
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	align-items: center;
+	/* justify-content: space-between; */
+
+	gap: 16px;
 
 	background-color: var(--background-sand);
-	border-radius: var(--border-radius);
+	border-radius: 6px;
 }
 
 .number {
@@ -20,15 +24,29 @@
 	border-radius: 6px;
 }
 
+.wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 100%;
+	gap: 12px;
+}
+
 .title {
-	height: 60px;
+	/* height: 60px; */
 
 	font-size: 24px;
 	font-weight: 500;
 }
 
-.imgWrap {
+/* .imgWrap {
 	border: 1px solid var(--accent);
+} */
+
+.image {
+	height: 250px;
 }
 
 .button {
@@ -76,7 +94,10 @@
 
 @media screen and (min-width: 768px) {
 	.item {
+		padding: 20px;
+
 		flex-basis: 48%;
+		align-items: flex-start;
 	}
 	.title,
 	.number {
@@ -84,6 +105,9 @@
 	}
 	.number {
 		width: 54px;
+	}
+	.wrap {
+		align-items: flex-start;
 	}
 }
 

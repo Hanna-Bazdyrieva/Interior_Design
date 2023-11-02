@@ -9,26 +9,66 @@ function Stages() {
 	return (
 		<section className="section" id="stages">
 			<div className={`container ${s.stagesContainer}`}>
-				<Title id="stages">Stages</Title>
+				<Title id="stages">Stages of Work</Title>
 
 				<div className={s.stepsInfo}>
-					<h3 className={s.infoTitle}>
+					{/* <h3 className={s.infoTitle}>
 						6 steps to the project you are dreaming about, that will save you
 						few monthes of construction and a lot of money
-					</h3>
+					</h3> */}
 					<ul className={s.stepsList}>
 						<StagesItem
 							number={1}
-							title="Consultation and technical assignment"
+							title="Introduction"
+							text="Consulting online, offline, or on-site. We discuss your general interior preferences"
 							link=""
 						/>
-						<StagesItem number={2} title="Planning solutions" link="" />
-						<StagesItem number={3} title="Collages" link="" />
-						<StagesItem number={4} title="3D visualization" link="" />
-						<StagesItem number={5} title="Charts" link="" />
+						<StagesItem
+							number={2}
+							title="Contract Signing"
+							text="We sign a contract. Fill out a questionnaire to consider all your wishes regarding the interior: room functionality, style, color solutions"
+							link=""
+						/>
+						<StagesItem
+							number={3}
+							title="Object Measurements"
+							text="I take measurements of your site"
+							link=""
+						/>
+						<StagesItem
+							number={4}
+							title="Layout Solution"
+							text="I create three layout options for furniture arrangement with the refinement of the chosen one"
+							link=""
+						/>
+						<StagesItem
+							number={5}
+							title="Design Concept"
+							text="I develop a custom design concept that reflects the overall stylistic of the interior and color solutions. I present it in the form of collages for each room"
+							link=""
+						/>
 						<StagesItem
 							number={6}
-							title="Calculation and specification"
+							title="3D Visualization"
+							text="I create photorealistic 3D images. I elaborate the interior in a real space"
+							link=""
+						/>
+						<StagesItem
+							number={7}
+							title="Working Drawings"
+							text="I prepare a full set of drawings to implement the design project"
+							link=""
+						/>
+						<StagesItem
+							number={8}
+							title="Specification"
+							text="I make an estimate for finishing materials, furniture items, lighting with price indications and stores. I take into account your budget"
+							link=""
+						/>
+						<StagesItem
+							number={9}
+							title="Design Project"
+							text="I send you the design project in digital format and a paper copy for your builders"
 							link=""
 						/>
 					</ul>

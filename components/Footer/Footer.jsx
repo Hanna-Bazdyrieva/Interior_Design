@@ -7,12 +7,12 @@ function Footer() {
 		<footer className={`${s.section} section`} id="contacts">
 			<div className="container">
 				<div className={s.headerContainer}>
-					<h3 className={s.header}>Get all the information&nbsp;</h3>
-					<h3 className={s.header}>and order your design project</h3>
+					<h3 className={s.header}>For more details &nbsp;</h3>
+					<h3 className={s.header}>and to order a project:</h3>
 				</div>
 				<div className={s.contact}>
-					<a className={s.contactLink} href="tel:+380677870178">
-						38-067-7870178
+					<a className={s.contactLink} href="tel:+000000000000">
+						+000000000000
 					</a>
 					<a className={s.contactLink} href="mailto: abc@example.com">
 						abc@example.com

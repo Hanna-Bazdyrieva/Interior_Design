@@ -19,7 +19,7 @@ export default function Home({ searchParams }) {
 			<Hero />
 			<Portfolio />
 			<Stages />
-			<Prices />
+			{/* <Prices /> */}
 			{id && (
 				<Modal>
 					<ImageDetail id={id} />

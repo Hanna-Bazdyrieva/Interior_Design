@@ -13,8 +13,8 @@ function Hero() {
 					<div className={s.wrap}>
 						<div className={s.portrateBlock}>
 							<div className={s.portraitInfo}>
-								<h3 className={s.portraitInfo_name}>Aleksandra Vasylevska</h3>
-								<p className={s.portraitInfo_title}>Interior Designer</p>
+								<h3 className={s.portraitInfo_name}>Oleksandra Vasylevska</h3>
+								<p className={s.portraitInfo_title}>interior designer</p>
 							</div>
 
 							<div className={s.portraitContainer}>
@@ -24,24 +24,27 @@ function Hero() {
 						<div className={s.infoWrap}>
 							<div className={s.profileInfo}>
 								<h1 className={s.title}>
-									Unique designs creation for busy people
+									Creating custom designs for people who value their time
 								</h1>
 								<p className={s.subTitle}>
-									Step-by-step plan, from the Idea to Realizaton.
+									I'll provide a step-by-step plan from idea to renovation
+									implementation during a free consultation{" "}
 								</p>
-								<p className={s.subTitle}>Get it on the FREE online meeting</p>
+								{/* <p className={s.subTitle}>Get it on the FREE online meeting</p> */}
 							</div>
 							<div className={s.buttonNoteWrap}>
-								<Button>Order meeting</Button>
+								<Button>Get a Consultation</Button>
 								<div className={s.consultNote}>
 									<svg className={s.consultIcon} width="20" height="20">
 										<use href="/icons/icons.svg#icon-clock"></use>
 									</svg>
 									<div>
 										<p className={s.consultNoteText}>
-											Meeting duration - 20 min.
+											The consultation lasts 20 minutes
 										</p>
-										<p className={s.consultNoteText}>Free. No obligations.</p>
+										<p className={s.consultNoteText}>
+											and does not obligate you to anything
+										</p>
 									</div>
 								</div>
 							</div>

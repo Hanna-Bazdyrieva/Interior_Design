@@ -31,9 +31,11 @@
 	position: absolute;
 	bottom: 0px;
 	right: 30px;
+
+	padding: 12px 12px;
+
 	background-color: #bcb4aad8;
 	border-radius: var(--border-radius);
-	padding: 12px;
 	box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
 	-webkit-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
 	-moz-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
@@ -129,11 +131,7 @@
 	}
 
 	.portraitInfo_name {
-		font-size: 30px;
-	}
-
-	.buttonNoteWrap {
-		flex-direction: row;
+		font-size: 28px;
 	}
 }
 
@@ -168,6 +166,10 @@
 	.consultNote {
 		font-size: 16px;
 	}
+
+	.buttonNoteWrap {
+		flex-direction: row;
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -181,13 +183,15 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+
 	.wrap {
 		display: flex;
 		flex-direction: row-reverse;
 		margin-bottom: 40px;
 	}
+
 	.infoWrap {
-		width: 800px;
+		width: 920px;
 	}
 
 	.title {
@@ -199,7 +203,7 @@
 	}
 
 	.profileInfo {
-		width: 600px;
+		width: 655px;
 		padding: 20px;
 	}
 
@@ -223,10 +227,12 @@
 		/* flex-direction: column; */
 		/* width: 75%; */
 	}
+
 	.consultIcon {
 		width: 32px;
 		height: 32px;
 	}
+
 	.consultNote {
 		padding-top: 20px;
 		font-size: 18px;
