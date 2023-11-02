@@ -8,8 +8,9 @@
 	/* justify-content: space-between; */
 
 	gap: 16px;
+	background-color: var(--background-grey);
 
-	background-color: var(--background-sand);
+	/* background-color: var(--background-sand); */
 	border-radius: 6px;
 }
 
