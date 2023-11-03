@@ -76,6 +76,10 @@
 	height: 100%;
 }
 
+.stagesBtnWrap {
+	flex-basis: 90%;
+}
+
 @media screen and (min-width: 480px) {
 	.stepsList {
 		flex-direction: row;
@@ -107,6 +111,11 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+
+	.stagesBtnWrap {
+		flex-basis: 49%;
+		align-self: center;
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -129,5 +138,10 @@
 
 		flex-basis: 32%;
 		max-width: 32%;
+	}
+
+	.stagesBtnWrap {
+		flex-basis: 32%;
+		align-self: flex-start;
 	}
 }

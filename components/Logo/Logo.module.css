@@ -1,0 +1,41 @@
+.logo {
+	position: relative;
+	padding: 8px;
+	width: fit-content;
+}
+
+.logoName {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.logoTitle {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.logo .navLink:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	bottom: 26px;
+	width: 0px;
+	height: 2px;
+	background: var(--accent);
+	transition: all 0.45s;
+}
+
+.logo .navLink:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+@media screen and (min-width: 1280px) {
+	.logoName {
+		font-size: 18px;
+	}
+
+	.logoTitle {
+		font-size: 16px;
+	}
+}

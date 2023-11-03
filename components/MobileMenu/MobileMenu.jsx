@@ -23,12 +23,20 @@ function MobileMenu({ setMenu }) {
 			<nav className={s.nav}>
 				<ul className={s.navList}>
 					<li>
-						<a href="#portfolio" className={s.navLink}>
+						<a
+							href="#portfolio"
+							className={s.navLink}
+							onClick={() => setMenu(false)}
+						>
 							Portfolio
 						</a>
 					</li>
 					<li>
-						<a href="#stages" className={s.navLink}>
+						<a
+							href="#stages"
+							className={s.navLink}
+							onClick={() => setMenu(false)}
+						>
 							Stages
 						</a>
 					</li>
@@ -38,7 +46,11 @@ function MobileMenu({ setMenu }) {
 						</a>
 					</li> */}
 					<li>
-						<a href="#contacts" className={s.navLink}>
+						<a
+							href="#contacts"
+							className={s.navLink}
+							onClick={() => setMenu(false)}
+						>
 							Contacts
 						</a>
 					</li>

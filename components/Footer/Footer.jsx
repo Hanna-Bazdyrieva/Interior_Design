@@ -1,21 +1,22 @@
 import React from "react";
 import s from "./Footer.module.css";
-import { Socials } from "..";
+import { Logo, Socials } from "..";
+import Link from "next/link";
 
 function Footer() {
 	return (
 		<>
 			<footer className={`${s.section} section`} id="contacts">
 				<div className={`${s.container} container`}>
-					<div className={s.imgWrap}>
+					{/* <div className={s.imgWrap}>
 						<img className={s.image} src="https://fakeimg.pl/100x130" alt="" />
 						<img className={s.image} src="https://fakeimg.pl/100x130" alt="" />
 						<img className={s.image} src="https://fakeimg.pl/100x130" alt="" />
-					</div>
-					<div className={s.textContainer}>
+					</div> */}
+					{/* <div className={s.textContainer}>
 						<h3 className={s.text}>For more details &nbsp;</h3>
 						<h3 className={s.text}>and to order a project:</h3>
-					</div>
+					</div> */}
 					<div className={s.wrap}>
 						<ul className={s.contact}>
 							<li>
@@ -72,11 +73,21 @@ function Footer() {
 							</ul>
 						</nav>
 					</div>
-					<div className={s.logo}>
-						<a href="#main" className={s.navLink}>
-							<h3 className={s.logoName}>Oleksandra Vasylevska</h3>
-							<p className={s.logoTitle}>interior design</p>
-						</a>
+					<div className={s.logoWrap}>
+						<div className={s.logoWrapTop}>
+							<Logo />
+						</div>
+						{/* <div className={s.logo}>
+							<a href="#main">
+								<h3 className={s.logoName}>Oleksandra Vasylevska</h3>
+								<p className={s.logoTitle}>interior design</p>
+							</a>
+						</div> */}
+						<div className={s.bottomWrap}>
+							{/* <Link href="/policy">Confidenciality Policy</Link> */}
+
+							<a href="">Site development</a>
+						</div>
 					</div>
 				</div>
 			</footer>

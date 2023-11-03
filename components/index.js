@@ -5,6 +5,7 @@ import Header from "./Header/Header.jsx";
 import Hero from "./Hero/Hero.jsx";
 import ImageDetail from "./ImageDetail/ImageDetail.jsx";
 import ImgBorder from "./ImgBorder/ImgBorder.jsx";
+import Logo from "./Logo/Logo.jsx";
 import MobileMenu from "./MobileMenu/MobileMenu.jsx";
 import Modal from "./Modal/Modal.jsx";
 import Portfolio from "./Portfolio/Portfolio.jsx";
@@ -22,6 +23,7 @@ export {
 	Header,
 	ImageDetail,
 	ImgBorder,
+	Logo,
 	MobileMenu,
 	Modal,
 	Portfolio,

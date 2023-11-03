@@ -20,7 +20,7 @@ function Stages() {
 						<StagesItem
 							number={1}
 							title="Introduction"
-							text="Consulting online, offline, or on-site. We discuss your general interior preferences"
+							text="Consulting online. We discuss your general interior preferences"
 							link=""
 						/>
 						<StagesItem
@@ -71,10 +71,14 @@ function Stages() {
 							text="I send you the design project in digital format and a paper copy for your builders"
 							link=""
 						/>
+						<li className={s.stagesBtnWrap}>
+							{" "}
+							<Button>Get a Consultation</Button>
+						</li>
 					</ul>
 				</div>
 
-				<div className={s.generalInfo}>
+				{/* <div className={s.generalInfo}>
 					<div className={s.infoWrap}>
 						<h3 className={s.infoTitle}>
 							You can save up to 400 hours of your time with our service of Full
@@ -118,8 +122,7 @@ function Stages() {
 					</div>
 					<StagesBenefits />
 					<StagesBenefits />
-				</div>
-				<Button>Order meeting</Button>
+				</div> */}
 			</div>
 		</section>
 	);

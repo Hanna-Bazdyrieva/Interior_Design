@@ -34,7 +34,7 @@
 
 	padding: 12px 12px;
 
-	background-color: #bcb4aad8;
+	background-color: var(--background-grey);
 	border-radius: var(--border-radius);
 	box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
 	-webkit-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
@@ -137,7 +137,7 @@
 
 @media screen and (min-width: 768px) {
 	.title {
-		margin-bottom: 16px;
+		margin-bottom: 20px;
 		font-size: 45px;
 	}
 
@@ -156,13 +156,14 @@
 		right: 290px;
 	}
 
-	.portraitInfo_title {
-		font-size: 24px;
+	.portraitInfo_name {
+		font-size: 28px;
 	}
 
-	.portraitInfo_name {
-		font-size: 32px;
+	.portraitInfo_title {
+		font-size: 22px;
 	}
+
 	.consultNote {
 		font-size: 16px;
 	}
@@ -178,7 +179,7 @@
 		height: 700px;
 		background-color: rgb(150, 152, 151);
 
-		background-image: url(../../public/images/photo1.jpg);
+		background-image: url(../../public/images/hero.jpg);
 		background-position-y: bottom;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -199,11 +200,11 @@
 	}
 
 	.subTitle {
-		font-size: 26px;
+		font-size: 24px;
 	}
 
 	.profileInfo {
-		width: 655px;
+		width: fit-content;
 		padding: 20px;
 	}
 
@@ -220,7 +221,7 @@
 		bottom: -124px;
 		z-index: 10;
 		right: 238px;
-		width: 380px;
+		width: 312px;
 	}
 
 	.buttonNoteWrap {
@@ -229,28 +230,13 @@
 	}
 
 	.consultIcon {
-		width: 32px;
-		height: 32px;
+		width: 28px;
+		height: 28px;
 	}
 
 	.consultNote {
 		padding-top: 20px;
-		font-size: 18px;
-		gap: 20px;
+		font-size: 16px;
+		gap: 12px;
 	}
-
-	/* .imageBigWrap {
-		position: absolute;
-		left: 0;
-		top: 500px;
-		margin-left: -50px;
-		width: 100vw;
-		height: 700px;
-		background-color: rgb(150, 152, 151);
-
-		background-image: url(../../public/images/photo1.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	} */
 }

@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import s from "./Header.module.css";
-import { MobileMenu } from "..";
+import { Logo, MobileMenu } from "..";
 
 function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -30,21 +30,22 @@ function Header() {
 			<div className={`container ${s.header}`}>
 				{!isSmallScreen && (
 					<>
-						<div className={s.logo}>
+						<Logo />
+						{/* <div className={s.logo}>
 							<a href="#main" className={s.navLink}>
 								<h3 className={s.logoName}>Oleksandra Vasylevska</h3>
 								<p className={s.logoTitle}>interior design</p>
 							</a>
-						</div>
+						</div> */}
 						<nav className={s.navigation}>
 							<ul className={s.navList}>
 								<li>
-									<a href="#portfolio" className={s.navLink}>
+									<a href="/#portfolio" className={s.navLink}>
 										Portfolio
 									</a>
 								</li>
 								<li>
-									<a href="#stages" className={s.navLink}>
+									<a href="/#stages" className={s.navLink}>
 										Stages
 									</a>
 								</li>
@@ -54,7 +55,7 @@ function Header() {
 									</a>
 								</li> */}
 								<li>
-									<a href="#contacts" className={s.navLink}>
+									<a href="/#contacts" className={s.navLink}>
 										Contacts
 									</a>
 								</li>

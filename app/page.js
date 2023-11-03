@@ -15,7 +15,7 @@ export default function Home({ searchParams }) {
 	const id = searchParams.image;
 	return (
 		<main className={styles.main}>
-			<Header />
+			{/* <Header /> */}
 			<Hero />
 			<Portfolio />
 			<Stages />
@@ -25,7 +25,7 @@ export default function Home({ searchParams }) {
 					<ImageDetail id={id} />
 				</Modal>
 			)}
-			<Footer />
+			{/* <Footer /> */}
 		</main>
 	);
 }
