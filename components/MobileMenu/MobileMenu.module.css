@@ -1,7 +1,8 @@
 .menu {
-	margin: 40px auto;
+	margin: 60px auto;
 	padding: 64px;
 	padding-top: 130px;
+	padding-bottom: 120px;
 
 	position: fixed;
 	top: 0;
@@ -68,7 +69,7 @@
 	align-items: center;
 	justify-content: center;
 
-	gap: 12px;
+	gap: 24px;
 
 	font-size: 32px;
 }
@@ -110,7 +111,37 @@
 	top: 22px;
 }
 
+.bottomWrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
 .phone {
 	font-size: 24px;
 	font-weight: 500;
+}
+
+.telephoneUnderHours {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	gap: 10px;
+}
+
+.greenCircle {
+	padding: 2px;
+	width: 16px;
+	height: 14px;
+
+	border-radius: 50%;
+	background-color: rgb(101, 197, 28);
+}
+
+.telephoneText {
+	font-size: 22px;
 }

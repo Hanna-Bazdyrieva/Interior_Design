@@ -1,6 +1,7 @@
 import React from "react";
-import s from "./MobileMenu.module.css";
 import { Socials } from "..";
+
+import s from "./MobileMenu.module.css";
 
 function MobileMenu({ setMenu }) {
 	return (
@@ -55,12 +56,19 @@ function MobileMenu({ setMenu }) {
 						</a>
 					</li>
 				</ul>
+			</nav>
+			<div className={s.bottomWrap}>
 				<a className={`${s.phone} ${s.navLink}`} href="tel:+000000000000">
 					+000000000000
 				</a>
-			</nav>
-
-			<Socials />
+				<div className={s.telephoneUnderHours}>
+					<div className={s.greenCircle}></div>
+					<p className={s.telephoneText}>
+						<span>Mon-Fri</span> <span>9:00am - 4:00pm</span>
+					</p>
+				</div>
+				<Socials />
+			</div>
 		</div>
 	);
 }
