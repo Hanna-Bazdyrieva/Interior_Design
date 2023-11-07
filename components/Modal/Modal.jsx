@@ -15,7 +15,7 @@ function Modal({ onClose = () => {}, children }) {
 			static
 			open={true}
 			onClose={() => {
-				router.push("/");
+				router.push("/#portfolio");
 			}}
 			initialFocus={overlayRef}
 			className={s.dialog}
