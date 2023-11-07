@@ -86,7 +86,13 @@ function Footer() {
 						<div className={s.bottomWrap}>
 							{/* <Link href="/policy">Confidenciality Policy</Link> */}
 
-							<a href="">Site development</a>
+							<a
+								href="https://github.com/Hanna-Bazdyrieva"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Site development
+							</a>
 						</div>
 					</div>
 				</div>
