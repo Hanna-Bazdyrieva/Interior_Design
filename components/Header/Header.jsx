@@ -82,19 +82,36 @@ function Header() {
 
 				{isSmallScreen && (
 					<>
+						<Logo />
+
 						{!menuOpen && (
-							<button
-								type="button"
-								className={s.menuBtnOpen}
-								onClick={() => setMenuOpen(true)}
-							>
-								<svg className={s.menuBtnOpenIcon} width="40" height="40">
-									<use href="/icons/icons.svg#icon-menu"></use>
-								</svg>
-							</button>
+							<>
+								<button
+									type="button"
+									className={s.menuBtnOpen}
+									onClick={() => setMenuOpen(true)}
+								>
+									<svg className={s.menuBtnOpenIcon} width="40" height="40">
+										<use href="/icons/icons.svg#icon-menu"></use>
+									</svg>
+								</button>
+							</>
 						)}
 
-						{menuOpen && <MobileMenu setMenu={setMenuOpen} />}
+						{menuOpen && (
+							<>
+								<button
+									type="button"
+									className={s.menuBtnOpen}
+									onClick={() => setMenuOpen(false)}
+								>
+									<svg width="40" height="40">
+										<use href="/icons/icons.svg#icon-close_40"></use>
+									</svg>
+								</button>
+								<MobileMenu setMenu={setMenuOpen} />
+							</>
+						)}
 					</>
 				)}
 			</div>

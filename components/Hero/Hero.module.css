@@ -3,21 +3,34 @@
 	overflow: visible;
 }
 
+.wrap {
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+
+	/* align-items: center;
+	justify-content: center; */
+	/* gap: 20px; */
+}
+
 .portrateBlock {
 	display: flex;
-	position: relative;
-	margin: 0 auto 20px;
-	padding: 10px 10px 40px 40px;
-	width: 300px;
+	position: absolute;
+	bottom: -346px;
+
+	/* margin: 0 auto 20px;
+	padding: 10px 10px 40px 40px; */
+	width: 100%;
 	/* align-items: center;
 	justify-content: center; */
 	/* outline: 1px solid green; */
 }
 
 .portraitContainer {
+	z-index: 1;
 	/* padding: 6px; */
-	width: auto;
-	height: 420px;
+	width: 46vw;
+	/* height: 420px; */
 	border-radius: 6px;
 	overflow: hidden;
 	object-fit: contain;
@@ -29,12 +42,13 @@
 
 .portraitInfo {
 	position: absolute;
-	bottom: 0px;
-	right: 30px;
+	z-index: 2;
+	bottom: 18px;
+	right: 15vw;
 
 	padding: 12px 12px;
 
-	background-color: var(--background-grey);
+	background-color: rgb(216 216 216 / 80%);
 	border-radius: var(--border-radius);
 	box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
 	-webkit-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
@@ -42,12 +56,12 @@
 }
 
 .portraitInfo_name {
-	font-size: 24px;
+	font-size: 20px;
 	/* font-weight: 500; */
 }
 
 .portraitInfo_title {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .portrait {
@@ -57,9 +71,40 @@
 }
 
 .infoWrap {
+	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 40px;
+}
+
+.portraitLocation {
+	position: absolute;
+
+	bottom: 120px;
+	right: 15vw;
+	padding: 6px;
+	/* flex-basis: 100%; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+
+	font-size: 12px;
+
+	background-color: rgb(216 216 216 / 80%);
+	border-radius: 6px;
+	box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
+	-webkit-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
+	-moz-box-shadow: 10px 10px 12px -3px rgba(122, 116, 116, 0.78);
+}
+
+.portraitLocation_text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	/* gap: 6px; */
 }
 
 .profileInfo {
@@ -98,11 +143,24 @@
 	font-size: 14px;
 }
 
-.consultIcon {
+.consultIcon,
+.portraitLocation_icon {
 	display: inline;
 	width: 24px;
 	height: 24px;
 	fill: var(--dark-grey);
+}
+
+.heroImgSection {
+	margin-bottom: 100px;
+	width: 100vw;
+	height: 30vh;
+	background-color: rgb(150, 152, 151);
+
+	background-image: url(../../public/images/hero_mob.jpg);
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 @media screen and (min-width: 480px) {
@@ -113,29 +171,48 @@
 		font-size: 26px;
 	}
 	.portrateBlock {
-		justify-content: flex-end;
-		width: 450px;
+		bottom: -472px;
 	}
 	.portraitContainer {
-		width: 332px;
-		height: 500px;
+		width: 260px;
+		height: auto;
 	}
 
 	.portraitInfo {
-		bottom: 60px;
-		right: 120px;
+		bottom: 20px;
+		right: 0;
 	}
 
 	.portraitInfo_title {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.portraitInfo_name {
-		font-size: 28px;
+		font-size: 26px;
+	}
+
+	.portraitLocation {
+		font-size: 14px;
+		bottom: 140px;
+		right: 0;
+	}
+
+	.heroImgSection {
+		margin-bottom: 120px;
+		height: 328px;
 	}
 }
 
 @media screen and (min-width: 768px) {
+	.heroImgSection {
+		margin-top: 100px;
+		margin-bottom: 0;
+
+		height: 450px;
+
+		background-image: url(../../public/images/hero_tab.jpg);
+	}
+
 	.title {
 		margin-bottom: 20px;
 		font-size: 45px;
@@ -143,17 +220,17 @@
 
 	.portrateBlock {
 		justify-content: flex-end;
-		width: 660px;
+		bottom: -378px;
 	}
 
 	.portraitContainer {
-		width: 380px;
-		height: 500px;
+		width: 330px;
+		/* height: 500px; */
 	}
 
 	.portraitInfo {
-		bottom: 96px;
-		right: 290px;
+		bottom: 44px;
+		right: 268px;
 	}
 
 	.portraitInfo_name {
@@ -164,35 +241,35 @@
 		font-size: 22px;
 	}
 
+	.portraitLocation {
+		font-size: 16px;
+		bottom: 464px;
+	}
 	.consultNote {
 		font-size: 16px;
 	}
 
 	.buttonNoteWrap {
-		flex-direction: row;
+		width: 50%;
 	}
 }
 
 @media screen and (min-width: 1280px) {
 	.heroImgSection {
-		width: 100vw;
+		margin-top: 0;
 		height: 700px;
-		background-color: rgb(150, 152, 151);
 
 		background-image: url(../../public/images/hero.jpg);
-		background-position-y: bottom;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 	.wrap {
-		display: flex;
+		/* display: flex;
 		flex-direction: row-reverse;
-		margin-bottom: 40px;
+		margin-bottom: 40px; */
 	}
 
 	.infoWrap {
-		width: 920px;
+		/* width: 920px; */
 	}
 
 	.title {
@@ -204,24 +281,27 @@
 	}
 
 	.profileInfo {
-		width: fit-content;
+		width: 60%;
 		padding: 20px;
 	}
 
 	.portrateBlock {
 		justify-content: flex-end;
-		width: 540px;
+		bottom: -200px;
+
+		/* width: 540px; */
 	}
 
 	.portraitContainer {
-		position: absolute;
+		width: 400px;
 	}
 
+	.portraitLocation {
+		bottom: 570px;
+	}
 	.portraitInfo {
-		bottom: -124px;
-		z-index: 10;
-		right: 238px;
-		width: 312px;
+		bottom: 138px;
+		right: 286px;
 	}
 
 	.buttonNoteWrap {

@@ -6,21 +6,6 @@ import s from "./MobileMenu.module.css";
 function MobileMenu({ setMenu }) {
 	return (
 		<div className={s.menu}>
-			<button
-				type="button"
-				className={s.menuBtnClose}
-				onClick={() => setMenu(false)}
-			>
-				<svg width="40" height="40">
-					<use href="/icons/icons.svg#icon-close_40"></use>
-				</svg>
-			</button>
-			<div className={s.logo}>
-				<a href="#main" className={s.navLink}>
-					<h3 className={s.logoName}>Oleksandra Vasylevska</h3>
-					<p className={s.logoTitle}>interior design</p>
-				</a>
-			</div>
 			<nav className={s.nav}>
 				<ul className={s.navList}>
 					<li>
