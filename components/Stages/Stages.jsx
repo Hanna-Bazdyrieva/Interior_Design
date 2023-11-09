@@ -1,9 +1,10 @@
 import React from "react";
-import s from "./Stages.module.css";
-import { Button, ImgBorder, Title } from "..";
 import Image from "next/image";
+import { Button, ImgBorder, Title } from "..";
 import StagesBenefits from "./StagesBenefits/StagesBenefits";
 import StagesItem from "./StagesItems/StagesItem";
+import { stages } from "./StagesTexts";
+import s from "./Stages.module.css";
 
 function Stages() {
 	return (
@@ -17,13 +18,11 @@ function Stages() {
 						few monthes of construction and a lot of money
 					</h3> */}
 					<ul className={s.stepsList}>
-						<StagesItem
-							number={1}
-							title="Introduction"
-							text="Consulting online. We discuss your general interior preferences"
-							link=""
-						/>
-						<StagesItem
+						{stages.map(({ number, text, title }) => (
+							<StagesItem number={number} title={title} text={text} link="" />
+						))}
+
+						{/* <StagesItem
 							number={2}
 							title="Contract Signing"
 							text="We sign a contract. Fill out a questionnaire to consider all your wishes regarding the interior: room functionality, style, color solutions"
@@ -70,9 +69,8 @@ function Stages() {
 							title="Design Project"
 							text="I send you the design project in digital format and a paper copy for your builders"
 							link=""
-						/>
+						/> */}
 						<li className={s.stagesBtnWrap}>
-							{" "}
 							<Button>Get a Consultation</Button>
 						</li>
 					</ul>

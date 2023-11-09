@@ -20,7 +20,7 @@ function Socials() {
 					</a>
 				</li>
 				<li className={s.socialsItem}>
-					<a href="" className={s.socialsLink}>
+					<a href="https://wa.me/48572723012" className={s.socialsLink}>
 						<svg className={s.socialsIcon} width="20" height="20">
 							<use href="/icons/icons.svg#whatsapp"></use>
 						</svg>
