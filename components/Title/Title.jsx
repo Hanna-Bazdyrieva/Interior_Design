@@ -1,8 +1,14 @@
 import React from "react";
+import "animate.css";
 import s from "./Title.module.css";
 
 function Title({ children }) {
-	return <h2 className={s.title}>{children}</h2>;
+	return (
+		// <h2 className={`${s.title} animate__animated animate__slideInLeft `}>
+		<h2 className={s.title} data-aos="fade-right">
+			{children}
+		</h2>
+	);
 }
 
 export default Title;

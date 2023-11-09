@@ -44,7 +44,7 @@ function Hero() {
 						</div>
 						<div className={s.infoWrap}>
 							<div className={s.profileInfo}>
-								<h1 className={s.title}>
+								<h1 className={s.title} data-aos="fade-down-right">
 									Creating custom designs for people who value their time
 								</h1>
 								<p className={s.subTitle}>

@@ -7,7 +7,7 @@ function Footer() {
 	return (
 		<>
 			<footer className={`${s.section} section`} id="contacts">
-				<div className={`${s.container} container`}>
+				<div className={`${s.container} container`} data-aos="fade-up">
 					{/* <div className={s.imgWrap}>
 						<img className={s.image} src="https://fakeimg.pl/100x130" alt="" />
 						<img className={s.image} src="https://fakeimg.pl/100x130" alt="" />
@@ -87,6 +87,7 @@ function Footer() {
 							{/* <Link href="/policy">Confidenciality Policy</Link> */}
 
 							<a
+								className={s.devLink}
 								href="https://github.com/Hanna-Bazdyrieva"
 								target="_blank"
 								rel="noopener noreferrer"

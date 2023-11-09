@@ -169,6 +169,10 @@ svg {
 	visibility: hidden;
 }
 
+/* .animate__animated.animate__bounce {
+	--animate-duration: 2s;
+} */
+
 @media screen and (min-width: 480px) {
 	.container {
 		width: 480px;

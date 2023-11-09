@@ -1,8 +1,6 @@
-import { useRouter } from "next/navigation";
+"use client";
 import styles from "./page.module.css";
 import {
-	Footer,
-	Header,
 	Hero,
 	ImageDetail,
 	Modal,
@@ -11,11 +9,20 @@ import {
 	Stages,
 } from "@/components";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function Home({ searchParams }) {
 	const id = searchParams.image;
+	useEffect(() => {
+		AOS.init({
+			duration: 800,
+			once: false,
+		});
+	}, []);
 	return (
 		<main className={styles.main}>
-			{/* <Header /> */}
 			<Hero />
 			<Portfolio />
 			<Stages />
@@ -25,7 +32,6 @@ export default function Home({ searchParams }) {
 					<ImageDetail id={id} />
 				</Modal>
 			)}
-			{/* <Footer /> */}
 		</main>
 	);
 }
