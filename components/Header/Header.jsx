@@ -26,7 +26,7 @@ function Header() {
 	const isSmallScreen = useMediaQuery("max", 768);
 
 	return (
-		<header className={`section ${s.headerSection}`}>
+		<header className={s.headerSection}>
 			<div className={`container ${s.header}`}>
 				{!isSmallScreen && (
 					<>
