@@ -4,28 +4,26 @@ import Image from "next/image";
 
 function StagesItem({ link, number, text, title }) {
 	return (
-		<>
-			<li className={s.item}>
-				<div className={s.number}>{number}</div>
-				<div className={s.wrap}>
-					<h4 className={s.title}>{title}</h4>
-					<p>{text}</p>
-					<div className={s.imgWrap}>
-						<Image
-							className={s.image}
-							src={`/images/stages/step${number}.jpg`}
-							alt={title}
-							width={350}
-							height={250}
-							priority
-						/>
-					</div>
+		<li className={s.item}>
+			<div className={s.number}>{number}</div>
+			<div className={s.wrap}>
+				<h4 className={s.title}>{title}</h4>
+				<p>{text}</p>
+				<div className={s.imgWrap}>
+					<Image
+						className={s.image}
+						src={`/images/stages/step${number}.jpg`}
+						alt={title}
+						width={350}
+						height={250}
+						priority
+					/>
 				</div>
-				{/* <a className={s.buttonLink} href={link}>
+			</div>
+			{/* <a className={s.buttonLink} href={link}>
 				<div className={s.button}>See example </div>
 			</a> */}
-			</li>
-		</>
+		</li>
 	);
 }
 

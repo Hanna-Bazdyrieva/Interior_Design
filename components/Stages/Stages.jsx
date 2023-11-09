@@ -19,7 +19,13 @@ function Stages() {
 					</h3> */}
 					<ul className={s.stepsList}>
 						{stages.map(({ number, text, title }) => (
-							<StagesItem number={number} title={title} text={text} link="" />
+							<StagesItem
+								key={number}
+								number={number}
+								title={title}
+								text={text}
+								link=""
+							/>
 						))}
 
 						{/* <StagesItem
