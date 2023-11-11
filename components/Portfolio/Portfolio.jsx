@@ -5,11 +5,11 @@ import { GalleryItem, Title } from "..";
 
 import s from "./Portfolio.module.css";
 
-function Portfolio() {
+function Portfolio({ staticData: { title } }) {
 	return (
 		<section className="section" id="portfolio">
 			<div className={`container ${s.portfolioContainer}`}>
-				<Title>Portfolio</Title>
+				<Title>{title}</Title>
 				<div className={s.gallery}>
 					<GalleryItem images={[1, 2]} />
 					<GalleryItem images={[4, 3]} reverse />

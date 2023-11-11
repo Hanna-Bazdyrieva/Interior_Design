@@ -2,9 +2,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import s from "./Header.module.css";
-import { Logo, MobileMenu } from "..";
+import { LocaleSwitcher, Logo, MobileMenu } from "..";
 
-function Header() {
+function Header({ staticData, lang }) {
+	const { locales, navigation, langButton, workingHours } = staticData;
+
 	const [menuOpen, setMenuOpen] = useState(false);
 	const useMediaQuery = (m, screen) => {
 		const [matches, setMatches] = useState(false);
@@ -31,34 +33,19 @@ function Header() {
 				{!isSmallScreen && (
 					<>
 						<Logo />
-						{/* <div className={s.logo}>
-							<a href="#main" className={s.navLink}>
-								<h3 className={s.logoName}>Oleksandra Vasylevska</h3>
-								<p className={s.logoTitle}>interior design</p>
-							</a>
-						</div> */}
+
 						<nav className={s.navigation}>
 							<ul className={s.navList}>
-								<li>
-									<a href="/#portfolio" className={s.navLink}>
-										Portfolio
-									</a>
-								</li>
-								<li>
-									<a href="/#stages" className={s.navLink}>
-										Stages
-									</a>
-								</li>
-								{/* <li>
-									<a href="#prices" className={s.navLink}>
-										Prices
-									</a>
-								</li> */}
-								<li>
-									<a href="/#contacts" className={s.navLink}>
-										Contacts
-									</a>
-								</li>
+								{navigation.map((item, i) => {
+									const { title, linkTo } = item;
+									return (
+										<li key={i}>
+											<a href={`/${lang}/#${linkTo}`} className={s.navLink}>
+												{title}
+											</a>
+										</li>
+									);
+								})}
 							</ul>
 						</nav>
 						<ul className={s.telephoneWrap}>
@@ -73,16 +60,20 @@ function Header() {
 							<li className={s.telephoneUnderHours}>
 								<div className={s.greenCircle}></div>
 								<p className={s.telephoneText}>
-									<span>Mon-Fri</span> <span>9:00am - 4:00pm</span>
+									<span>{workingHours.top}</span>
+									<span>{workingHours.bottom}</span>
 								</p>
 							</li>
 						</ul>
+						<LocaleSwitcher locales={locales} />
 					</>
 				)}
 
 				{isSmallScreen && (
 					<>
 						<Logo />
+
+						<LocaleSwitcher locales={locales} />
 
 						{!menuOpen && (
 							<>
@@ -109,7 +100,11 @@ function Header() {
 										<use href="/icons/icons.svg#icon-close_40"></use>
 									</svg>
 								</button>
-								<MobileMenu setMenu={setMenuOpen} />
+								<MobileMenu
+									setMenu={setMenuOpen}
+									staticData={staticData}
+									lang={lang}
+								/>
 							</>
 						)}
 					</>

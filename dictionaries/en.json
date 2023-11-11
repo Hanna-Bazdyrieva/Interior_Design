@@ -1,0 +1,131 @@
+{
+	"header": {
+		"locales": ["en", "ru"],
+		"navigation": [
+			{ "title": "Portfolio", "linkTo": "portfolio" },
+			{ "title": "Stages", "linkTo": "stages" },
+			{ "title": "Contacts", "linkTo": "contacts" }
+		],
+		"langButton": {
+			"headerBtn": "Рус",
+			"menuBtn": "Перейти на русский"
+		},
+		"workingHours": { "top": "Mon-Fri", "bottom": " 9:00am-4:00pm" }
+	},
+	"page": {
+		"hero": {
+			"title": "Creating custom designs for people who value their time",
+			"text": "I'll provide a step-by-step plan from idea to renovation implementation during a free consultation",
+			"consultBtn": {
+				"buttonText": "Get a Consultation",
+				"buttonNotes": {
+					"top": "The consultation lasts 20 minutes",
+					"bottom": "and does not oblige you to anything"
+				}
+			},
+			"portrait": {
+				"alt": "photo of Oleksandra Vasylevska",
+				"portraitName": "Oleksandra Vasylevska",
+				"portraitTitle": "interior designer"
+			},
+			"location": {
+				"city": "located in St.Albans",
+				"country": "United Kingdom"
+			}
+		},
+
+		"portfolio": {
+			"title": "Portfolio"
+		},
+		"stages": {
+			"title": "Stages of Work",
+			"stagesList": [
+				{
+					"stageNumber": "1",
+					"stageTitle": "Introduction",
+					"stageText": "Consulting online, offline, or on-site. We discuss your wishes and needs, I give recommendations and advice on the design of your home"
+				},
+				{
+					"stageNumber": "2",
+					"stageTitle": "Contract Signing",
+					"stageText": "We sign a contract. Fill out a questionnaire to consider all your wishes regarding the interior: room functionality, style, color solutions"
+				},
+				{
+					"stageNumber": "3",
+					"stageTitle": "Object Measurements",
+					"stageText": "I take measurements of your site"
+				},
+				{
+					"stageNumber": "4",
+					"stageTitle": "Layout Solution",
+					"stageText": "I create three layout options for furniture arrangement with the refinement of the chosen one"
+				},
+				{
+					"stageNumber": "5",
+					"stageTitle": "Design Concept",
+					"stageText": "I develop a custom design concept that reflects the overall stylistic of the interior and color solutions. I present it in the form of collages for each room"
+				},
+				{
+					"stageNumber": "6",
+					"stageTitle": "3D Visualization",
+					"stageText": "I create photorealistic 3D images. I elaborate the interior in a real space"
+				},
+				{
+					"stageNumber": "7",
+					"stageTitle": "Working Drawings",
+					"stageText": "I prepare a full set of drawings to implement the design project"
+				},
+				{
+					"stageNumber": "8",
+					"stageTitle": "Specification",
+					"stageText": "I make an estimate for finishing materials, furniture items, lighting with price indications and stores. I take into account your budget"
+				},
+				{
+					"stageNumber": "9",
+					"stageTitle": "Design Project",
+					"stageText": "I send you the design project in digital format and a paper copy for your builders"
+				},
+				{
+					"stageNumber": "10",
+					"stageTitle": "Author's Supervision",
+					"stageText": "During the renovation, I monitor the construction work to ensure it matches the design project"
+				},
+				{
+					"stageNumber": "11",
+					"stageTitle": "Fitting",
+					"stageText": "I choose the best supplier offers for finishing materials, furniture items, and lighting. I handle the purchasing, logistics, and claims"
+				},
+				{
+					"stageNumber": "12",
+					"stageTitle": "Renovation",
+					"stageText": "I work with proven construction teams"
+				}
+			],
+			"stagesBtn": "Get a Consultation"
+		}
+	},
+	"footer": {
+		"navigation": [
+			{ "title": "Home", "linkTo": "main" },
+			{ "title": "Portfolio", "linkTo": "portfolio" },
+			{ "title": "Stages", "linkTo": "stages" },
+			{ "title": "Contacts", "linkTo": "contacts" }
+		],
+		"workingHours": { "top": "Mon-Fri", "bottom": " 9:00am-4:00pm" },
+		"contacts": {
+			"title": "Contacts",
+			"address": "St.Albans, United Kingdom",
+			"phone": "+440000000000",
+			"email": "email@gmail.com"
+		},
+		"siteDevelopment": "Site development"
+	},
+	"meta": {
+		"metadata": {
+			"title": "Varicose Vein Treatment in Kyiv | Vascular Surgeon - Sergii Voitsitskyi",
+			"description": "Consultation with a phlebologist. Effective varicose vein treatment, modern equipment, comfortable conditions. Affordable price. Treatment for thrombosis.",
+			"base": "https://phlebologist.vercel.app/",
+			"keywords": "phlebologist, varicose veins, thrombosis"
+		}
+	}
+}

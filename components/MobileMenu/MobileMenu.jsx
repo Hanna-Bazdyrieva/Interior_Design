@@ -3,43 +3,27 @@ import { Socials } from "..";
 
 import s from "./MobileMenu.module.css";
 
-function MobileMenu({ setMenu }) {
+function MobileMenu({ lang, setMenu, staticData }) {
+	const { navigation, workingHours } = staticData;
+
 	return (
 		<div className={s.menu}>
 			<nav className={s.nav}>
 				<ul className={s.navList}>
-					<li>
-						<a
-							href="#portfolio"
-							className={s.navLink}
-							onClick={() => setMenu(false)}
-						>
-							Portfolio
-						</a>
-					</li>
-					<li>
-						<a
-							href="#stages"
-							className={s.navLink}
-							onClick={() => setMenu(false)}
-						>
-							Stages
-						</a>
-					</li>
-					{/* <li>
-						<a href="#prices" className={s.navLink}>
-							Prices
-						</a>
-					</li> */}
-					<li>
-						<a
-							href="#contacts"
-							className={s.navLink}
-							onClick={() => setMenu(false)}
-						>
-							Contacts
-						</a>
-					</li>
+					{navigation.map((item, i) => {
+						const { title, linkTo } = item;
+						return (
+							<li key={i}>
+								<a
+									href={`/${lang}/#${linkTo}`}
+									className={s.navLink}
+									onClick={() => setMenu(false)}
+								>
+									{title}
+								</a>
+							</li>
+						);
+					})}
 				</ul>
 			</nav>
 			<div className={s.bottomWrap}>
@@ -49,7 +33,8 @@ function MobileMenu({ setMenu }) {
 				<div className={s.telephoneUnderHours}>
 					<div className={s.greenCircle}></div>
 					<p className={s.telephoneText}>
-						<span>Mon-Fri</span> <span>9:00am - 4:00pm</span>
+						<span>{workingHours.top}</span>
+						<span>{workingHours.bottom}</span>
 					</p>
 				</div>
 				<Socials />

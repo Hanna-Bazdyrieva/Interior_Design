@@ -1,5 +1,4 @@
 import React from "react";
-import "animate.css";
 import s from "./Title.module.css";
 
 function Title({ children }) {
