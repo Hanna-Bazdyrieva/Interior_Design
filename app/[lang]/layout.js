@@ -6,6 +6,7 @@ import { Footer, Header } from "@/components";
 
 import { getDictionary } from "@/utils/dictionaries";
 import "./globals.css";
+import { i18n } from "@/i18n.config";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500"] });
 // const onest = Onest({ subsets: ["latin"], weight: ["400", "500", "600"] });
@@ -36,8 +37,15 @@ export async function generateMetadata({ params }) {
 	};
 }
 
+export async function generateStaticParams() {
+	return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
 export default async function RootLayout({ children, params }) {
+	console.log("Layout params", params);
+
 	const { lang } = params;
+	console.log("Layout lang", lang);
 	const { header, footer } = await getDictionary(lang);
 
 	return (

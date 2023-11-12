@@ -24,18 +24,18 @@ export function middleware(request) {
 		(locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
 	);
 	// Check if requested resource is of type image.
-	// if (!request.headers.get("accept").includes("image")) {
-	// Redirect if there is no locale
-	if (pathnameIsMissingLocale) {
-		const locale = getLocale(request);
-		return NextResponse.redirect(
-			new URL(
-				`/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
-				request.url
-			)
-		);
+	if (!request.headers.get("accept").includes("image")) {
+		// Redirect if there is no locale
+		if (pathnameIsMissingLocale) {
+			const locale = getLocale(request);
+			return NextResponse.redirect(
+				new URL(
+					`/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
+					request.url
+				)
+			);
+		}
 	}
-	// }
 }
 
 export const config = {
