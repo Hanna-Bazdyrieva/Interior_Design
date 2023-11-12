@@ -146,7 +146,7 @@
 	height: 200px;
 	background-color: rgb(126, 126, 126);
 
-	background-image: url(../../public/images/hero.jpg);
+	background-image: url(/images/hero.jpg);
 	background-position-y: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -186,7 +186,7 @@
 		width: 100vw;
 
 		background-color: rgb(126, 126, 126);
-		background-image: url(../../public/images/hero.jpg);
+		background-image: url(/images/hero.jpg);
 		background-position-y: center;
 		background-repeat: no-repeat;
 		background-size: cover;
