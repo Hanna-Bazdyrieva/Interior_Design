@@ -14,9 +14,9 @@ function StagesItem({ link, number, text, title }) {
 						className={s.image}
 						src={`/images/stages/step${number}.jpg`}
 						alt={title}
-						width={350}
-						height={250}
-						priority
+						width={400}
+						height={267}
+						quality={80}
 					/>
 				</div>
 			</div>

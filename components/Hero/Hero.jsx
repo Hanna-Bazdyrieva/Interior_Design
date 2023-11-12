@@ -19,7 +19,7 @@ function Hero({ staticData }) {
 						<div className={s.portrateBlock}>
 							<div className={s.portraitInfo}>
 								<h3 className={s.portraitInfo_name}>{portraitName}</h3>
-								<p className={s.portraitInfo_title}>{portraitTitle}r</p>
+								<p className={s.portraitInfo_title}>{portraitTitle}</p>
 							</div>
 							<div className={s.portraitLocation}>
 								<svg className={s.portraitLocation_icon} width="20" height="20">
@@ -32,10 +32,18 @@ function Hero({ staticData }) {
 							</div>
 
 							<div className={s.portraitContainer}>
+								{/* <Image
+									className={s.portrait}
+									src="/images/portrait.jpg"
+									alt="Oleksandra Vasylevska photo "
+									width={400}
+									height={600}
+									priority
+								/> */}
 								<img
 									className={s.portrait}
-									srcSet=" images/portrait_mob.jpg 200w, images/portrait_tab.jpg 300w, images/portrait.jpg 400w "
-									src="images/portrait_mob.jpg"
+									srcSet="/images/portrait_mob.jpg 200w, /images/portrait_tab.jpg 300w, /images/portrait.jpg 400w"
+									src="/images/portrait.jpg"
 								/>
 							</div>
 						</div>
@@ -44,6 +52,14 @@ function Hero({ staticData }) {
 								<h1 className={s.title} data-aos="fade-down-right">
 									{title}
 								</h1>
+								{/* <Image
+									className={s.portrait}
+									src="/images/portrait.jpg"
+									alt="Oleksandra Vasylevska photo "
+									width={400}
+									height={600}
+									priority
+								/> */}
 								<p className={s.subTitle}>{text}</p>
 								{/* <p className={s.subTitle}>Get it on the FREE online meeting</p> */}
 							</div>

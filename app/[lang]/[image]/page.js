@@ -3,7 +3,6 @@ import Image from "next/image";
 import s from "./page.module.css";
 
 export default function ImagePage({ params: image }) {
-	console.log(image);
 	const id = image.image;
 
 	return (

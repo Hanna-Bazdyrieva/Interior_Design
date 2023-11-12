@@ -27,9 +27,9 @@ import {
 import styles from "./page.module.css";
 import { getDictionary } from "@/utils/dictionaries";
 
-export default async function Home({ searchParams, params }) {
+export default async function Home({ searchParams, params: { lang } }) {
 	const id = searchParams.image;
-	const { page } = await getDictionary(params.lang);
+	const { page } = await getDictionary(lang);
 	const { hero, portfolio, stages } = page;
 
 	// useEffect(() => {
@@ -42,7 +42,7 @@ export default async function Home({ searchParams, params }) {
 	return (
 		<main className={styles.main}>
 			<Hero staticData={hero} />
-			<Portfolio staticData={portfolio} />
+			<Portfolio staticData={portfolio} lang={lang} />
 			<Stages staticData={stages} />
 			{/* <Prices /> */}
 			{id && (

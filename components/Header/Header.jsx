@@ -60,12 +60,12 @@ function Header({ staticData, lang }) {
 							<li className={s.telephoneUnderHours}>
 								<div className={s.greenCircle}></div>
 								<p className={s.telephoneText}>
-									<span>{workingHours.top}</span>
+									<span>{workingHours.top}&nbsp;</span>
 									<span>{workingHours.bottom}</span>
 								</p>
 							</li>
 						</ul>
-						<LocaleSwitcher locales={locales} />
+						<LocaleSwitcher locales={locales} lang={lang} />
 					</>
 				)}
 
@@ -73,7 +73,7 @@ function Header({ staticData, lang }) {
 					<>
 						<Logo />
 
-						<LocaleSwitcher locales={locales} />
+						<LocaleSwitcher locales={locales} lang={lang} />
 
 						{!menuOpen && (
 							<>
