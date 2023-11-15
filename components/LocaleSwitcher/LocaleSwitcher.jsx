@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import s from "./LocaleSwitcher.module.css";
 
 function LocaleSwitcher({ locales, lang }) {
-	console.log("locales, lang", locales, lang);
+	// console.log("locales, lang", locales, lang);
 	const pathName = usePathname();
 
 	const redirectedPathName = (locale) => {
@@ -19,7 +19,7 @@ function LocaleSwitcher({ locales, lang }) {
 	return (
 		<ul className={s.langList}>
 			{locales.map((locale) => {
-				console.log("localr lang", locale, lang);
+				// console.log("localr lang", locale, lang);
 				if (locale === lang) {
 					return (
 						<li className={s.langItem} key={locale}>

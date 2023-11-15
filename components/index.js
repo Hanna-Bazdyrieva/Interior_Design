@@ -1,4 +1,5 @@
 import Button from "./Button/Button.jsx";
+import FacebookPixel from "./FacebookPixel/FacebookPixel.js";
 import Footer from "./Footer/Footer.jsx";
 import GalleryItem from "./GalleryItem/GalleryItem.jsx";
 import Header from "./Header/Header.jsx";
@@ -18,6 +19,7 @@ import Title from "./Title/Title.jsx";
 
 export {
 	Button,
+	FacebookPixel,
 	Footer,
 	GalleryItem,
 	Hero,
