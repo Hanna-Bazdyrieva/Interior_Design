@@ -17,6 +17,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500"] });
 // };
 
 export async function generateMetadata({ params }) {
+	// console.log("layout", params);
 	const { meta } = await getDictionary(params.lang);
 	const { metadata, twitter, openGraph } = meta;
 
